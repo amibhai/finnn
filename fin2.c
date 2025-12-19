@@ -1,0 +1,13 @@
+/* Addition of two numbers in C */
+#include <stdio.h>
+
+int main(void) {
+    int a, b;
+    printf("Enter two integers: ");
+    if (scanf("%d %d", &a, &b) != 2) {
+        fprintf(stderr, "Invalid input\n");
+        return 1;
+    }
+    printf("%d + %d = %d\n", a, b, a + b);
+    return 0;
+}
